@@ -8,7 +8,7 @@ const conn=mysql.createConnection({
     database:config.DB
 });
 
-//connect
+//connecting to database
 conn.connect((err)=>{
     if(err){
       throw err;

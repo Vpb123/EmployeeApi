@@ -1,3 +1,4 @@
+// Credentials for database connection
 module.exports ={
     HOST:'localhost',
     USER:'root',
