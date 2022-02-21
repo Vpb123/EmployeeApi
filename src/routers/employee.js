@@ -2,12 +2,12 @@ const e = require("express");
 const express= require("express");
 const router = express.Router();
 // const Employee = require("../services/employee")
-const sql= require("../services/db");
+const sql= require("../config/db");
 const messages=require("../services/messages");
 
 /*Create Employee Table if Not Exists*/
 router.get('/create', async(req, res)=>{
-      const tableQuery = `CREATE TABLE IF NOT EXIST employee (       
+      const tableQuery = `CREATE TABLE IF NOT EXISTS employee (       
         EmployeeID INT AUTO_INCREMENT PRIMARY KEY,
         FirstName VARCHAR(255) NOT NULL,
         LastName VARCHAR(255),
